@@ -36,7 +36,6 @@ async def generate_token(form_data: _security.OAuth2PasswordRequestForm = _fasta
 async def get_user(user: _schemas.User = _fastapi.Depends(_services.get_current_user)):
     return user
 
-
 if __name__ == "__main__":
     import uvicorn
 
